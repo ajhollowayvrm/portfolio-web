@@ -12,8 +12,7 @@ phases:
       - echo Build started on `date`
   post_build:
     commands:
-      - echo Nothing to do in the post_build phase...
-      - aws s3 cp dist s3://holloway-portfoliio/ --recursive
+      - aws s3 cp MyApp s3://holloway-portfoliio/ --recursive
 
 artifacts:
   files:
